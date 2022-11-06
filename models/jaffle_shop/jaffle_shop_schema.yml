@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: This table has basic information about a customer level order details
+
+    columns:
+      - name: user_id
+        description: This is a unique identifier for a customer
+        tests:
+          - unique
+          - not_null
+
+      - name: order_id
+        description: This is a unique identifier for an order.
+
+      - name: full_name
+        description: Customer's  name. PII.
+
+      - name: first_order
+        description: Date (UTC) of a customer's first order
+
+      - name: order_date
+        description: Date (UTC) of an order
+
+      - name: order_status
+        description: Current state of the order
+
