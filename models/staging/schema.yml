@@ -8,5 +8,6 @@ sources:
       - name: customers
 
   - name: stripe
+    database: dbt-tutorial
     tables:
       - name: payments
