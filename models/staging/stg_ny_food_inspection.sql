@@ -1,0 +1,32 @@
+select
+    camis,
+    dba,
+    boro,
+    building,
+    street,
+    zipcode,
+    phone,
+    cuisine_description,
+    inspection_date,
+    action,
+    violation_code,
+    violation_description,
+    critical_flag,
+    score,
+    grade,
+    grade_date,
+    record_date,
+    inspection_type,
+    latitude,
+    longitude,
+    community_board,
+    council_district,
+    census_tract,
+    bin,
+    bbl,
+    nta,
+    location_point
+
+from
+    {{ source('data_lake', 'ny_city_restaurant_inspection_results') }}
+    --dbt-learn-367705.data_lake.ny_city_restaurant_inspection_results 

@@ -11,3 +11,10 @@ sources:
     database: dbt-tutorial
     tables:
       - name: payments
+
+  - name: data_lake
+    database: dbt-learn-367705
+    tables:
+      - name: ny_city_restaurant_inspection_results
+      - name: 311_data_raw
+  
